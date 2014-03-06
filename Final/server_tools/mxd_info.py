@@ -1,4 +1,5 @@
 import arcpy
+from centroid import Config # `pip install centroid` => https://github.com/ResourceDataInc/Centroid -- a configuration helper by jtroe & co.
 import json
 import os
 import os.path
@@ -71,7 +72,9 @@ def _get_layer_info(layer, index):
 	return layer_info
 
 if __name__ == '__main__':
-	rt_path = sys.argv[-1]
+	config = Config.from_file("config.json").for_environment('Dev')
+	rt_path = config.maps.documents_source
+	#rt_path = sys.argv[-1]
 	#rt_path = 'C:/users/jroebuck/projects/agdc/gis/mapservices'
 	map_services = [ map_service.from_path_info(mxd, rt_path) for mxd in get_all_files(rt_path, '.mxd') ]
 	map_services_json = obj_to_json(map_services)
