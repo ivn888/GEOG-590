@@ -1,0 +1,203 @@
+{
+  "Dev": {
+    "Database": {
+      "Server": "geojson-dev-db.roebuckgis.com",
+      "Key": "DEV_geojson_APP",
+      "AppDB": "geojson_APP",
+      "SdeConnectionsPath": "\\\\geojson-db.roebuckgis.com\\x$\\Admin\\Connections\\Dev",
+      "ConfigPath":"Scripts\\db\\config\\dev",
+      "AppUser": {
+        "Username": "geojson_AppUser",
+        "Password": "abcdefg"
+      }
+    },
+    "ArcServer": {
+      "Server": "http://geojson-dev-web.roebuckgis.com:6080",
+      "Admin":{
+        "Username": "admin",
+        "Password": "abcdefg"
+      }
+    },
+    "Web": {
+      "Source": "Scripts\\deploy\\source",
+      "Deploy": "\\\\geojson-dev-web.roebuckgis.com\\c$\\inetpub\\wwwroot"
+    },
+    "Desktop": {
+      "Source": "Scripts\\deploy\\desktop",
+      "Deploy": "\\\\geojson-dev-web.roebuckgis.com\\c$\\geojson\\Tools",
+      "PyAddins": {
+        "Script": "Scripts.tools.deploy.pythonaddin",
+        "ParcelUpdater": {
+          "Source": "GIS\\Desktop\\ParcelUpdater",
+          "Deploy": "\\\\geojson-db.roebuckgis.com\\x$\\Tools\\Dev\\ParcelUpdater"
+        }
+      }
+    },
+    "Log": {
+      "RestEndpoint": "https://geojson-dev-web.roebuckgis.com/logs/jobs",
+      "UserName": "gisservice",
+      "Password": "abcdefg"
+    }
+  },
+  "Test": {
+    "Database": {
+      "Server": "geojson-test-db.roebuckgis.com",
+      "Key": "TEST_geojson_APP",
+      "AppDB": "geojson_APP",
+      "SdeConnectionsPath": "\\\\geojson-db.roebuckgis.com\\x$\\Admin\\Connections\\Test",
+      "ConfigPath":"Scripts\\db\\config\\test",
+      "AppUser": {
+        "Username": "geojson_AppUser",
+        "Password": "abcdefg"
+      }
+    },
+    "ArcServer": {
+      "Server": "http://geojson-test-web.roebuckgis.com:6080",
+      "Admin":{
+        "Username": "admin",
+        "Password": "abcdefg"
+      }
+    },
+    "Web": {
+      "Source": "Scripts\\deploy\\source",
+      "Deploy": "\\\\geojson-test-web.roebuckgis.com\\c$\\inetpub\\wwwroot"
+    },
+    "Desktop": {
+      "Source": "Scripts\\deploy\\desktop",
+      "Deploy": "\\\\geojson-test-web.roebuckgis.com\\c$\\geojson\\Tools",
+      "PyAddins": {
+        "Script": "Scripts.tools.deploy.pythonaddin",
+        "ParcelUpdater": {
+          "Source": "GIS\\Desktop\\ParcelUpdater",
+          "Deploy": "\\\\geojson-db.roebuckgis.com\\x$\\Tools\\Test\\ParcelUpdater"
+        }
+      }
+    },
+    "Log": {
+      "RestEndpoint": "https://geojson-test-web.roebuckgis.com/logs/jobs",
+      "UserName": "gisservice",
+      "Password": "abcdefg"
+    }
+  },
+  "QA": {
+    "Database": {
+      "Server": "geojson-qa-db.roebuckgis.com",
+      "Key": "QA_geojson_APP",
+      "AppDB": "geojson_APP",
+      "SdeConnectionsPath": "\\\\geojson-db.roebuckgis.com\\x$\\Admin\\Connections\\QA",
+      "ConfigPath":"Scripts\\db\\config\\qa",
+      "AppUser": {
+        "Username": "geojson_AppUser",
+        "Password": "abcdefg"
+      }
+    },
+    "ArcServer": {
+      "Server": "http://geojson-qa-web.roebuckgis.com:6080",
+      "Admin":{
+        "Username": "admin",
+        "Password": "abcdefg"
+      }
+    },
+    "Web": {
+      "Source": "Scripts\\deploy\\source",
+      "Deploy": "\\\\geojson-qa-web.roebuckgis.com\\c$\\inetpub\\wwwroot"
+    },
+    "Desktop": {
+      "Source": "Scripts\\deploy\\desktop",
+      "Deploy": "\\\\geojson-qa-web.roebuckgis.com\\c$\\geojson\\Tools",
+      "PyAddins": {
+        "Script": "Scripts.tools.deploy.pythonaddin",
+        "ParcelUpdater": {
+          "Source": "GIS\\Desktop\\ParcelUpdater",
+          "Deploy": "\\\\geojson-db.roebuckgis.com\\x$\\Tools\\QA\\ParcelUpdater"
+        }
+      }
+    },
+    "Log": {
+      "RestEndpoint": "https://geojson-qa-web.roebuckgis.com/logs/jobs",
+      "UserName": "gisservice",
+      "Password": "abcdefg"
+    }
+  },
+  "Prod": {
+    "Database": {
+      "Server": "geojson-db.roebuckgis.com",
+      "Key": "PROD_geojson_APP",
+      "AppDB": "geojson_APP",
+      "SdeConnectionsPath": "\\\\geojson-db.roebuckgis.com\\x$\\Admin\\Connections\\Prod",
+      "ConfigPath":"Scripts\\db\\config\\prod",
+      "AppUser": {
+        "Username": "geojson_AppUser",
+        "Password": "abcdefg"
+      }
+    },
+    "ArcServer": {
+      "Server": "http://geojson-web.roebuckgis.com:6080",
+      "Admin":{
+        "Username": "admin",
+        "Password": "abcdefg"
+      }
+    },
+    "Web": {
+      "Source": "Scripts\\deploy\\source",
+      "Deploy": "\\\\geojson-web.roebuckgis.com\\c$\\inetpub\\wwwroot"
+    },
+    "Desktop": {
+      "Source": "Scripts\\deploy\\desktop",
+      "Deploy": "\\\\geojson-web.roebuckgis.com\\c$\\geojson\\Tools",
+      "PyAddins": {
+        "Script": "Scripts.tools.deploy.pythonaddin",
+        "ParcelUpdater": {
+          "Source": "GIS\\Desktop\\ParcelUpdater",
+          "Deploy": "\\\\geojson-db.roebuckgis.com\\x$\\Tools\\Prod\\ParcelUpdater"
+        }
+      }
+    },
+    "Log": {
+      "RestEndpoint": "https://geojson-web.roebuckgis.com/logs/jobs",
+      "UserName": "gisservice",
+      "Password": "abcdefg"
+    }
+  },
+  "All": {
+    "Migrations": {
+      "Source": "Scripts\\db\\migrations"
+    },
+    "Documents": {
+      "PagesSource": "Docs\\geojson",
+      "PagesDeploy" : "GIS\\WebMap\\geojson.Web\\pages",
+      "ImagesSource": "Documents\\geojson\\images",
+      "ImagesDeploy": "GIS\\WebMap\\geojson.Web\\images\\docs",
+      "RDocDirectory": "docs"
+    },
+    "Maps": {
+      "DocumentsSource": "MapServices",
+      "ConnectionsSource": "Connections"
+    },
+    "Solutions": {
+      "geojson": {
+        "Source": "GIS/Solutions/geojson.sln"
+      }
+    },
+    "Projects": {
+      "Web": {
+        "Source": "GIS/WebMap/geojson.Web/geojson.Web.csproj",
+        "BuildProperties": {
+          "Platform": "AnyCpu",
+          "DeployOnBuild": true,
+          "AutoParameterizationWebConfigConnectionStrings": false,
+          "_PackageTempDir": "Scripts\\deploy\\source\\main"
+        }
+      },
+      "DataCatalogWeb": {
+        "Source": "GIS/DataCatalog/geojson.GIS.DataCatalog/geojson.GIS.DataCatalog.Web/geojson.GIS.DataCatalog.Web.csproj",
+        "BuildProperties": {
+          "Platform": "AnyCpu",
+          "DeployOnBuild": true,
+          "AutoParameterizationWebConfigConnectionStrings": false,
+          "_PackageTempDir": "Scripts\\deploy\\source\\admin"
+        }
+      }
+    }
+  }
+}
